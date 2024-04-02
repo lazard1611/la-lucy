@@ -7,32 +7,30 @@
     }
 </style>
 
-<section class="section-example">
-    <div class="section-example__wrapper">
-        EXAMPLE SECTION
-        <h2 class="section-example__title">{{ section.settings.title }}</h2>
-        <div class="section-example__description">{{ section.settings.description }}</div>
+<div class="gift__container">
+    <h2 class="gift__title">{{ section.settings.title }}</h2>
+
+    <div class="gift__wrapper">        
+        
+        {% render 'gift-card' %}
     </div>
-</section>
+</div>
 
 <script type="module" src="{{ 'section-example.js' | asset_url }}"></script>
 
 {% schema %}
     {
-        "name": "Example section",
+        "name": "Gift section",
+        "tag": "section",
+        "class": "gift",
         "settings": [
             {
                 "type": "text",
                 "id": "title",
-                "label": "Title"
+                "label": "Title",
+                "default": "Choose a customization gift for the loved one"
             },
-            {
-                "type": "textarea",
-                "id": "description",
-                "label": "Description",
-                "info": "Use <br> to break a line"
-            },
-            
+                        
             {
                 "type": "range",
                 "id": "margin-bottom",
@@ -64,7 +62,7 @@
         ],
         "presets": [
             {
-                "name": "Example section",
+                "name": "Gift section",
                 "settings": {
 
                 }

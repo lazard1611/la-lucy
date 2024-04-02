@@ -1,11 +1,11 @@
 {
     "sections": {
-        "Hero": {
-            "type": "EXAMPLE-SECTION",
+        "Gift card": {
+            "type": "gift-card",
             "settings": {}
         }
     },
     "order": [
-        "Hero"
+        "Gift card"
     ]
 }
