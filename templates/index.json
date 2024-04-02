@@ -1,11 +1,14 @@
 {
-    "sections": {
-        "Gift card": {
-            "type": "gift-card",
-            "settings": {}
-        }
-    },
-    "order": [
-        "Gift card"
-    ]
+  "sections": {
+    "section_gift_NgJqYn": {
+      "type": "section-gift",
+      "settings": {
+        "title": "Choose a customization gift for the loved one",
+        "margin-bottom": 45
+      }
+    }
+  },
+  "order": [
+    "section_gift_NgJqYn"
+  ]
 }
